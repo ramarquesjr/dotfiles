@@ -1,0 +1,56 @@
+URxvt*termName: rxvt
+## borderless and no scrollbar
+URxvt*scrollstyle: rxvt
+URxvt*scrollBar_right: true
+URxvt*scrollBar: false
+URxvt*borderLess: false
+
+## teh transparency stuff
+URxvt*inheritPixmap: true
+URxvt*tintColor: white
+URxvt*shading: 10
+
+## geometry and font
+## URxvt*geometry: 84×24
+## URxvt*letterSpace: -1
+## URxvt.font: xft:Inconsolata for Powerline:size=10:style=Medium
+URxvt*font: xft:terminus:pixelsize=12
+##URxvt*font: xft:Terminess Powerline:size=12
+## URxvt*font: xft:SauceCodePro\ Nerd\ Font\ Mono:size=11
+
+## change default colors
+URxvt*background: #000000
+URxvt*foreground: #A8A8A8
+URxvt*color0: #000000
+URxvt*color1: #A80000
+URxvt*color2: #00A800
+URxvt*color3: #A85400
+URxvt*color4: #0000A8
+URxvt*color5: #A800A8
+URxvt*color6: #00A8A8
+URxvt*color7: #A8A8A8
+URxvt*color8: #545054
+URxvt*color9: #F85450
+URxvt*color10: #50FC50
+URxvt*color11: #F2FC50
+URxvt*color12: #5054F8
+URxvt*color13: #F854F8
+URxvt*color14: #50FCF8
+URxvt*color15: #F8FCF8
+
+! ------------------------------------------------------------------------------
+! ! ROFI Color theme
+! ! ------------------------------------------------------------------------------
+! ! Use extended color scheme
+rofi.color-enabled:                  true
+! ! Color scheme for normal row
+rofi.color-normal:                   argb:a02f1e2e, #b4b4b4, argb:a02f1e2e, argb:54815ba4, #ffffff
+! ! Color scheme for urgent row
+rofi.color-urgent:                   argb:272f1e2e, #ef6155, argb:2f2f1e2e, argb:54815ba4, #ef6155
+! ! Color scheme for active row
+rofi.color-active:                   argb:272f1e2e, #815ba4, argb:2f2f1e2e, argb:54815ba4, #815ba4
+! ! Color scheme window
+rofi.color-window:                   argb:e02f1e2e, argb:36ef6155, argb:2fef6155
+! ! Separator style (none, dash, solid)
+rofi.separator-style:                dash
+!
