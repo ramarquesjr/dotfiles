@@ -12,7 +12,7 @@ set $bg-color            #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+set $urgent-bg-color     #E53934
 
 set $mod Mod4
 
@@ -175,6 +175,7 @@ bindsym $mod+Control+l exec "i3lock -c 2f343f"
 
 # Print Screen
 bindsym Print  exec --no-startup-id scrot "$HOME/screenshot/Screen%Y-%m-%d %H-%M-%S %z.png"
+bindsym --release Shift+Print exec "import png:- | xclip -selection clipboard -t image/png"
 
 for_window [instance="pwsafe"]  floating enable
 for_window [instance="pwsafe"]  move absolute position 0 px 0 px
@@ -254,7 +255,6 @@ hide_edge_borders both
 # hide_edge_borders both
 # new_window pixel
 # new_float pixel
-
 
 #config gaps
 set $mode_gaps Gaps: (o) outer, (i) inner

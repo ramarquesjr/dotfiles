@@ -15,4 +15,7 @@ export PATH=$PATH:$HOME/.local/bin
 
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export SSH_ASKPASS=/usr/lib/seahorse/seahorse-ssh-askpass
+export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on
 gpgconf --launch gpg-agent
+
+source .alias
