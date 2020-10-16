@@ -1,0 +1,90 @@
+include-file = ~/.config/polybar/colors.ini
+include-file = ~/.config/polybar/modules.ini
+
+[bar/bar1]
+override-redirect = true
+wm-restack = i3
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+fixed-center = true
+width = 16.5%
+height = 34
+radius = 15.0
+offset-y = 6
+offset-x = 6
+padding = 2
+line-size = 3
+
+font-0 = "Scientifica:size=8;2"
+font-1 = "waffle:size=12;2"
+font-2 = Siji:style=Regular:pixelsize=10
+
+
+modules-center = i3
+tray-position = left
+tray-maxsize = 15
+tray-background = ${color.bg}
+tray-offset-x = 6
+tray-offset-y = 6
+tray-padding = 1
+
+[bar/bar2]
+wm-restack = i3
+
+background = ${color.trans}
+foreground = ${color.color8}
+
+fixed-center = true
+width = 25%
+height = 34
+radius = 15.0
+offset-y = 6
+offset-x = 17.5%
+
+font-0 = "Scientifica:size=8;2"
+font-1 = "waffle:size=12;2"
+font-2 = Siji:style=Regular:pixelsize=10
+modules-left = mpd
+
+[bar/bar3]
+background = ${color.bg}
+foreground = ${color.fg}
+
+wm-restack = i3
+fixed-center = true
+width = 22%
+height = 34
+radius = 15.0
+offset-y = 6
+offset-x = 72.5%
+padding = 2
+font-0 = "Scientifica:size=8;2"
+font-1 = "waffle:size=12;2"
+font-2 = Siji:style=Regular:pixelsize=10
+modules-center =  battery alsa memory backlight cpu
+
+[bar/bar4]
+background = ${color.color13}
+foreground = ${color.color0}
+
+wm-restack = i3
+fixed-center = true
+width = 4.5%
+height = 34
+offset-y = 6
+offset-x = 95%
+padding = 2
+radius = 15.0
+modules-center = date
+font-0 = "Scientifica:size=8;2"
+font-1 = "waffle:size=12;2"
+font-2 = Siji:style=Regular:pixelsize=10
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+screenchange-reload = true
+pseudo-transparency = true
