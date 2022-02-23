@@ -14,8 +14,14 @@ PS1="\[\033[01;32m\]\u@\h \[\033[0;34m\]\w\[\033[01;31m\]\$(git-branch-prompt)\[
 export PATH=$PATH:$HOME/.local/bin
 
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-export SSH_ASKPASS=/usr/lib/seahorse/seahorse-ssh-askpass
+#export SSH_ASKPASS=/usr/lib/seahorse/seahorse-ssh-askpass
+export SSH_ASKPASS=/usr/lib64/misc/x11-ssh-askpass
 export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on
 gpgconf --launch gpg-agent
+
+# Instalação do asdf-vm
+# git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 source .alias
