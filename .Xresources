@@ -1,20 +1,9 @@
-URxvt*termName: rxvt
-## borderless and no scrollbar
-URxvt*scrollstyle: rxvt
-URxvt*scrollBar_right: true
-URxvt*scrollBar: false
-URxvt*borderLess: false
-
-## teh transparency stuff
-URxvt*inheritPixmap: true
-URxvt*tintColor: white
-URxvt*shading: 10
 
 ## geometry and font
 ## URxvt*geometry: 84×24
 ## URxvt*letterSpace: -1
 ## URxvt.font: xft:Inconsolata for Powerline:size=10:style=Medium
-URxvt*font: xft:terminus:pixelsize=12
+URxvt*font: xft:terminus:pixelsize=11
 ##URxvt*font: xft:Terminess Powerline:size=12
 ## URxvt*font: xft:SauceCodePro\ Nerd\ Font\ Mono:size=11
 
@@ -38,6 +27,17 @@ URxvt*color13: #F854F8
 URxvt*color14: #50FCF8
 URxvt*color15: #F8FCF8
 
+URxvt*termName: rxvt
+## borderless and no scrollbar
+URxvt*scrollstyle: rxvt
+URxvt*scrollBar_right: true
+URxvt*scrollBar: false
+URxvt*borderLess: false
+
+## teh transparency stuff
+URxvt*inheritPixmap: true
+URxvt*tintColor: white
+URxvt*shading: 10
 ! ------------------------------------------------------------------------------
 ! ! ROFI Color theme
 ! ! ------------------------------------------------------------------------------
@@ -54,3 +54,18 @@ rofi.color-window:                   argb:e02f1e2e, argb:36ef6155, argb:2fef6155
 ! ! Separator style (none, dash, solid)
 rofi.separator-style:                dash
 !
+! ------------------------------------------------------------------------------
+! Xft Font Configuration
+! ------------------------------------------------------------------------------
+
+## Xft.autohint: 1
+Xft.autohint: 0
+Xft.antialias: 1
+## Xft.hinting: true
+Xft.hinting: 1
+## Xft.hintstyle: hintslight
+Xft.hintstyle: hintfull
+Xft.dpi: 96
+## Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
